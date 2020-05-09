@@ -1,0 +1,25 @@
+.problemGroup {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  &:not(:last-child) {
+    margin-bottom: 25px;
+  }
+
+  .problemNum {
+    font-size: 12px;
+    padding-right: 10px;
+  }
+
+  .problem {
+    line-height: 0.95;
+    padding-right: 10px;
+  }
+
+  .answer {
+    display: block;
+    width: 50px;
+    border-bottom: 1px solid;
+  }
+}

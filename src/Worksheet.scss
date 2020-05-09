@@ -1,0 +1,22 @@
+.worksheet {
+  padding: 40px 100px;
+  font-size: 20px;
+
+  .topData {
+    display: flex;
+    justify-content: space-between;
+    max-width: 75%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+
+  .columns {
+    display: flex;
+    justify-content: space-between;
+
+    .col {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
