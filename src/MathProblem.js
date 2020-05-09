@@ -14,6 +14,8 @@ const MathProblem = (max, opArray, num) => {
     <div className='problemGroup'>
       <div className='problemNum'>{`${num}. `}</div>
       <div className='problem'>
+        {/* Always have the smaller number on the left to
+            avoid negative answers */}
         {numA >= numB ? (
           `${numA} ${op} ${numB} = _____`
         ) : (
