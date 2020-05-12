@@ -10,7 +10,7 @@ const MathProblem = (max, opArray, num) => {
   const numA = getRandomInt(max)
   const numB = getRandomInt(max)
 
-  return (
+  const question = (
     <div className='problemGroup'>
       <div className='problemNum'>{`${num}. `}</div>
       <div className='problem'>
@@ -24,6 +24,38 @@ const MathProblem = (max, opArray, num) => {
       </div>
     </div>
   )
+
+  const answer = (
+    <div className='problemGroup'>
+      <div className='problemNum'>{`${num}. `}</div>
+      <div className='problem'>
+        {/* Always have the smaller number on the left to
+            avoid negative answers */}
+        {
+          op === '+' ? (
+          numA + numB
+        ) : (
+          Math.abs(numA - numB)
+        )}
+      </div>
+    </div>
+  )
+
+  // return (
+  //   <div className='problemGroup'>
+  //     <div className='problemNum'>{`${num}. `}</div>
+  //     <div className='problem'>
+  //       {/* Always have the smaller number on the left to
+  //           avoid negative answers */}
+  //       {numA >= numB ? (
+  //         `${numA} ${op} ${numB} = _____`
+  //       ) : (
+  //         `${numB} ${op} ${numA} = _____`
+  //       )}
+  //     </div>
+  //   </div>
+  // )
+  return ([question, answer])
 }
 
 export default MathProblem

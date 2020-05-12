@@ -21,4 +21,12 @@
       flex-direction: column;
     }
   }
+
+  .pageBreak {
+    padding-top: 40px;
+
+    @media print {
+      page-break-before: always;
+    }
+  }
 }
