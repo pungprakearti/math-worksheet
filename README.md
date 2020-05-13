@@ -11,3 +11,6 @@ yarn start
 ### Notes on printing
 Print with no margins and you should be good.
 
+<p align="center">
+<img src="worksheets-prev.png" alt="two math worksheets" />
+</p>
